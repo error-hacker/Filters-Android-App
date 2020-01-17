@@ -47,7 +47,7 @@ public class ControlActivity extends AppCompatActivity {
 
                 if (ContextCompat.checkSelfPermission(ControlActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
                     if(ActivityCompat.shouldShowRequestPermissionRationale(ControlActivity.this,Manifest.permission.WRITE_EXTERNAL_STORAGE)){
-                        //show user a message
+
                     } else{
                         ActivityCompat.requestPermissions(ControlActivity.this,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, MY_REQUEST_STORAGE_PERMISSION);
                     }
